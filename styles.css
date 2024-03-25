@@ -1,4 +1,16 @@
-
+/* css for headin or paragraph */
+h1{
+    color: #fff;
+    font-family:Frank Ruhl Libre;
+    font-size: 30px;
+    font-weight: 500px;
+}
+p{
+    font-size: 34px;
+    font-weight: 300px;
+    color: #fff;
+    font-family:Inter;
+}
 /* ---------------------------------------------------CSS for home-section */
 
 /* navbar */
@@ -34,81 +46,41 @@
     background-position: center;
     background-size: cover;
 }
+.heading{
+    font-size: 52px;
+    font-weight:500px ;
+    font-family: Frank Ruhl Libre;
+}
+.subheading{
+    font-size: 24px;
+    font-weight: 400px;
+    font-family:Inter ;
+    color: #fff;
+}
 /* banner box text  */
 .banner-box{
     display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-    h1{
-        color: #fff;
-        font-family:Frank Ruhl Libre;
-        font-size: 52px;
-        font-weight: 500px;
-    }
-    h6{
-        font-size: 24px;
-        font-weight: 400px;
-        color: #fff;
-        font-family:Inter;
-    }
+  align-items: center;   
 }
+
 
   
   /* home section 3 images */
 #homeimg1 {
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
 }
 #homeimg2 {
-    height: 80px;
-    width: 100px;
+    height: 70px;
+    width: 90px;
 }
 #homeimg3 {
-    height: 80px;
-    width: 150px;
+    height: 70px;
+    width: 130px;
 }
-.img-box img{
-    margin-right: 20px;
-}
-.img-box img:last-child {
-    margin-right: 0;
-}
-/* mobile view */
-/* CSS for mobile */
-@media (max-width: 767px) {
-    .banner {
-        /* Adjust banner styles for mobile view */
-    }
-    .navbar {
-        /* Adjust navbar styles for mobile view */
-        text-align: center;
-    }
-    .navbar ul {
-        margin: 0;
-        padding: 0;
-    }
-    .navbar li {
-        list-style: none;
-    }
-    .banner-box {
-        text-align: center;
-    }
-    .img-box {
-        justify-content: center;
-    }
-    #login {
-        margin-top: 20px; /* Adjust margin for spacing */
-    }
-    .home-form {
-        margin: 0 auto; /* Center the form */
-        max-width: 300px; /* Set maximum width for the form */
-    }
-    .custom-input,
-    .loginbtn {
-        width: 100%; /* Make inputs and button full width */
-    }
-}
+
 
 /* Apply form */
        
@@ -182,59 +154,37 @@
             
             
         }
-        #about h2{
-            color: rgb(255, 255, 255);
-            font-family:  Frank Ruhl Libre;
-            font-size: 30px;
-            font-weight: 500px;
-        }
-    #about p{
-        color: #ffffff;
-        font-size: 34px;
-        font-weight: 300px;
-        font-family: Frank Ruhl Libre;
-        text-align: center;
-       
-       
-    }
+        
+    
     
   /* --------------------------CSS for WHYwe section */
     #whywe{
-        h1{
-            font-family: Frank Ruhl Libre;
-            font-size: 30px;
-            font-weight: 500px;
-            letter-spacing: 0.1em;
-           color:  rgba(26, 65, 40, 1);
-
+       h1{
+        color:  rgba(26, 65, 40, 1);   
+       }
+       p{
+        color:  rgba(26, 65, 40, 1);   
+       }
             
+          
             
-        }
-        p{
-            font-family: Frank Ruhl Libre;
-            font-size: 40px;
-            font-weight: 300px;
-            color: rgba(26, 65, 40, 1);
-            
-        }
+      
+       
     }
     /* ---------------------------CSS for innovationSection */
     #innovation{
-        color:  rgba(26, 65, 40, 1);
-        
-        h1{
-font-size: 32px;
-font-weight: 500px;
-font-family:Frank Ruhl Libre ;
+        .card-title{
+            color:  rgba(26, 65, 40, 1); 
+            font-size: 32px;
+            font-weight: 500px;
+            font-family: Frank Ruhl Libre; 
         }
-        h6{
-font-family:Frank Ruhl Libre;
-font-size: 18px;
-font-weight: 400;
-line-height: 25.2px;
-text-align: left;
-
-        }
+     .card-text{
+        color:  rgba(26, 65, 40, 1);  
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400px;
+     }
         .card{
             border: none;
         }
@@ -242,18 +192,11 @@ text-align: left;
      /*-------------------------------CSS for cardCurriculumSection */
     #cardCurriculum{
        
-        .heading{
-            font-size: 30px;
-            font-weight: 500px;
-            color: rgba(26, 65, 40, 1);
-            font-family: Frank Ruhl Libre;
-            
+        .text-center{
+           
+            color: rgba(26, 65, 40, 1);    
         }
-        p{
-            font-family: 40px;
-            font-weight: 500px;
-            font-family: Frank Ruhl Libre;
-        }
+        
         .Explore{
             align-items: center;
             color: #fff;
@@ -262,6 +205,12 @@ text-align: left;
             font-size: 16px;
             text-decoration: underline;
           
+        }
+        h4{
+            color: #fff;
+            font-family: Frank Ruhl Libre;
+            font-size: 32px;
+            font-weight: 700px;
         }
     }
     .viewall {
@@ -276,12 +225,7 @@ text-align: left;
       }
    
     #cardCurriculum{
-        .card {
-            position: relative;
-            border: none; 
-           
-           
-          }
+        
       
           .card::after {
             content: '';
@@ -300,84 +244,128 @@ text-align: left;
             transform: scaleX(1);
           }
       
+          .card {
+            position: relative;
+            overflow: hidden;
+
+          }
           .card-text {
             position: absolute;
-            bottom: 10px; 
+            top: 50%;
             left: 50%;
-            transform: translateX(-50%);
-            color: white;
-            padding: 10px;
-            width: calc(100% - 20px); 
+            transform: translate(-50%, -50%);
             text-align: center;
-          } 
-          h2{
-font-family:Frank Ruhl Libre ;
-font-size:30px ;
-font-weight: 500px;
-color: #fff ;
-          }  
-          p{
-font-family: Frank Ruhl Libre;
-font-weight:300px ;
-font-size:40px ;
-color: rgba(26, 65, 40, 1);
+            opacity: 0;
+            transition: opacity 0.3s ease;
           }
-          .card-text h2{
-            font-weight: 700px;
+          .card:hover .card-text {
+            opacity: 1;
+          }
+          .card-text p,
+          .card-text button {
+            display: block;
+            margin-bottom: 10px;
+            font-family:Inter ;
+            font-size:18px ;
+            font-weight:400px ;
+          }
+          .card-text h2 {
+            
             font-size: 32px;
-            font-family: Frank Ruhl Libre;
-          }
-          .card-text p{
-            font-family: Inter;
-            font-size: 18px;
-            font-weight: 400px;
+            font-weight: 700px;
             color: #fff;
+            font-family: Frank Ruhl Libre;
+            
           }
+          .card-text p {
+            font-size: 18px;
+          }
+          .card-text button {
+            background-color: #007bff00;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            align-items: center;
+            cursor: pointer;
+            text-decoration: underline;
+          }
+          
+         
+          
     }
 
     /* -----------CSS for TestimonialSection  */
-
-    #testimonial img{
+    #testimonial img {
         height: 110px;
         width: 110px;
-        border-radius:60%;
-        
-      }
-      .text-box {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    text-align: center; 
-    }
-    #testimonial h2{
-        font-family: 30px;
-        font-weight: 500px;
-        font-family: Frank Ruhl Libre;
-    }
-    #testimonial .card{
-        border: none;
-    }
-
-    .title-subtitle-box {
-    margin: 0 20px; 
-    border: none;
-    padding: 10px 20px; 
-    display: inline-block; 
+        border-radius: 60%;
     }
     
-    #testimonial p{
-        font-size: 40px;
-        font-family: 300px;
-        font-family: Frank Ruhl Libre;
-        color:rgba(29, 37, 32, 1);
+    .text-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
+    
+    #testimonial{
+
+     .text-center{
+        color:rgba(26, 65, 40, 1);
+     }
+.card-text{
+    color:rgba(29, 37, 32, 1);
+
+}
+    }
+ 
+    
+    #testimonial .card {
+        border: none;
+    }
+    
+    .title-subtitle-box {
+        margin: 0 20px;
+        border: none;
+        padding: 10px 20px;
+        display: inline-block;
+    }
+    
+    #testimonial p {
+        font-size: 24px; 
+        font-family: 'Frank Ruhl Libre', sans-serif;
+        color: rgba(29, 37, 32, 1);
+    }
+    
     .line {
-      border: none;
-      border-top: 2px solid rgba(191, 132, 49, 1); 
-      height: 40px; 
-      width: 20%; 
-      margin: 10px auto; 
+        border: none;
+        border-top: 2px solid rgba(191, 132, 49, 1);
+        height: 20px; 
+        width: 50%; 
+        margin: 10px auto;
     }
+    
+    /* Media Queries */
+    @media screen and (max-width: 768px) {
+        #testimonial img {
+            height: 80px; /* Adjusted height */
+            width: 80px; /* Adjusted width */
+        }
+        
+        #testimonial h2 {
+            font-size: 24px; /* Adjusted font size */
+        }
+    
+        #testimonial p {
+            font-size: 18px; /* Adjusted font size */
+        }
+        
+        .line {
+            height: 10px; /* Adjusted height */
+            width: 70%; /* Adjusted width */
+        }
+    }
+    
     /* star pef */
     
     #starperforform {
@@ -476,17 +464,19 @@ color: rgba(26, 65, 40, 1);
   }
   .minifooter{
     background-color:  rgb(5, 26, 13);
-    p{
-        font-family: 14px;
-        font-weight: 300px;
-        font-family: Inter;
-    }
+   p{
+    font-family: Frank Ruhl Libre;
+    font-size: 16px;
+    font-weight: 300px;
+   }
     a{
         font-family: Frank Ruhl Libre;
         font-size: 16px;
         font-weight: 300px;
     }
+
   }
+  
     /*---------------------------------------CSS for Owl */
     .btn-wrap-owl1, .btn-wrap-owl2 {
         text-align: center;
@@ -510,6 +500,8 @@ color: rgba(26, 65, 40, 1);
     display: flex;
     flex: 1 0 auto;
     height: 100%;
+    max-height: 300px;
+    object-fit: contain;
   }
   .Uniform-height {
     position: relative;
