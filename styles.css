@@ -53,12 +53,8 @@
         font-family:Inter;
     }
 }
-@media only screen and (min-width: 768px) {
-    .banner-box {
-      justify-content: flex-start;
-      align-items: flex-start;
-    }
-  }
+
+  
   /* home section 3 images */
 #homeimg1 {
     height: 80px;
@@ -77,6 +73,41 @@
 }
 .img-box img:last-child {
     margin-right: 0;
+}
+/* mobile view */
+/* CSS for mobile */
+@media (max-width: 767px) {
+    .banner {
+        /* Adjust banner styles for mobile view */
+    }
+    .navbar {
+        /* Adjust navbar styles for mobile view */
+        text-align: center;
+    }
+    .navbar ul {
+        margin: 0;
+        padding: 0;
+    }
+    .navbar li {
+        list-style: none;
+    }
+    .banner-box {
+        text-align: center;
+    }
+    .img-box {
+        justify-content: center;
+    }
+    #login {
+        margin-top: 20px; /* Adjust margin for spacing */
+    }
+    .home-form {
+        margin: 0 auto; /* Center the form */
+        max-width: 300px; /* Set maximum width for the form */
+    }
+    .custom-input,
+    .loginbtn {
+        width: 100%; /* Make inputs and button full width */
+    }
 }
 
 /* Apply form */
@@ -149,6 +180,7 @@
         #about{
             background-color: rgba(26, 65, 40, 1);
             
+            
         }
         #about h2{
             color: rgb(255, 255, 255);
@@ -162,10 +194,10 @@
         font-weight: 300px;
         font-family: Frank Ruhl Libre;
         text-align: center;
-        margin-left: 140px;
-        margin-right: 140px;
+       
        
     }
+    
   /* --------------------------CSS for WHYwe section */
     #whywe{
         h1{
@@ -210,7 +242,7 @@ text-align: left;
      /*-------------------------------CSS for cardCurriculumSection */
     #cardCurriculum{
        
-        h2{
+        .heading{
             font-size: 30px;
             font-weight: 500px;
             color: rgba(26, 65, 40, 1);
@@ -221,6 +253,15 @@ text-align: left;
             font-family: 40px;
             font-weight: 500px;
             font-family: Frank Ruhl Libre;
+        }
+        .Explore{
+            align-items: center;
+            color: #fff;
+            font-family: Inter;
+            font-weight: 700px;
+            font-size: 16px;
+            text-decoration: underline;
+          
         }
     }
     .viewall {
@@ -399,6 +440,25 @@ color: rgba(26, 65, 40, 1);
             font-weight: 400px;
             font-size: 18px;
         }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            color: #fff;
+            font-family: Frank Ruhl Libre;
+        }
+        .fa {
+            margin-right: 8px; /* Adjust as needed */
+            color: #fff;
+        }
+        .no-icon {
+            margin-left: 18px; /* Adjust as needed */
+            color: #fff;
+            font-family: Inter;
+        }
+        .no-icon:first-child {
+            margin-left: 0; /* Reset margin for the first item */
+            
+        }
     }
    
 .social-icons a i {
@@ -407,13 +467,26 @@ color: rgba(26, 65, 40, 1);
     padding: 10px;
     border-radius: 50%;
     transition: background-color 0.3s, color 0.3s; 
+    margin-right: 10px;
   }
   
   
   .social-icons a i:hover {
     background-color: #c4c4c4; 
   }
-  
+  .minifooter{
+    background-color:  rgb(5, 26, 13);
+    p{
+        font-family: 14px;
+        font-weight: 300px;
+        font-family: Inter;
+    }
+    a{
+        font-family: Frank Ruhl Libre;
+        font-size: 16px;
+        font-weight: 300px;
+    }
+  }
     /*---------------------------------------CSS for Owl */
     .btn-wrap-owl1, .btn-wrap-owl2 {
         text-align: center;
