@@ -53,14 +53,8 @@
 
                 <h1>Creating Leaders of Tomorrow</h1>
                 <h3 class="text-center mt-3">Apply now</h3>
-                <form class="home-form p-4">
-                  <!-- <div class="mb-3">
-                      <select class="form-select custom-select" id="occupation" name="occupation" required>
-                          <option value="" selected>Pick Up Option</option>
-                          <option value="pickup">Pick up 1</option>
-                          <option value="other">Other</option>
-                      </select>
-                  </div> -->
+                <form class="home-form mb-5 p-4">
+                 
                   <div class="mb-3">
                       <input type="text" class="form-control custom-input" placeholder="Student name" id="name" name="name" required />
                   </div>
@@ -138,7 +132,7 @@
     <div class="container-fluid d-flex  align-items-center flex-column" style="background-color: rgba(26, 65, 40, 1)">
       <div
         class="line bg-warning text-warning"
-        style="height: 150px; width: 1px"
+        style="height: 180px; width: 1px;color: rgba(191, 132, 49, 1);"
       ></div>
       <div class="owl-carousel owl-theme" id="owl1">
         <div class="item Uniform-height-items rounded">
@@ -243,7 +237,7 @@
 <!---------------cardCurriculumSection -->
 
 <div class="container p-5" id="cardCurriculum">
-  <h2 class="text-center">OUR CURRICULUM</h2>
+  <h2 class="text-center mb-4 heading ">OUR CURRICULUM</h2>
   <p class="text-center">Indus International School Pune is an IB World School that offers all four IB programs.</p>
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-0">
   <div class="col">
@@ -261,6 +255,7 @@
       <div class="card-text">
         <h2>Middle Years Programme (MYP)</h2>
         <p>Indus International School boasts state-of-the-art facilities, but that’s not all. Their leadership Innovation program is designed to help each child reach their full potential. </p>
+        <button class="Explore">Explore</button>
       </div>
     </div>
   </div>
@@ -412,6 +407,15 @@
               </div>
             </div>
           </div>
+          <div class="item">
+            <div class="image-container">
+              <img src="img/Group236.png">
+              <div class="content">
+                <h3>Mytri Rajendran</h3>
+                <p>56/56</p>
+              </div>
+            </div>
+          </div>
           <!-- Add more items here if needed -->
         </div>
         <button class="prev-btn-performance">
@@ -441,17 +445,24 @@
             </div>
           </div>
           <div class="col-md-4">
-            <!-- <h3>Contact</h3> -->
-            <p><i class="fas fa-envelope"></i> <strong>Mail us:</strong></p>
-            <p>simran@gmail.com</p>
-            <p>
-              <i class="fas fa-map-marker-alt"></i>
-              <strong>Address:</strong> 123 Street, City, Country
-            </p>
-            <p>
-              <i class="fas fa-phone"></i> <strong>Call:</strong> +1234567890
-            </p>
-          </div>
+           
+                
+            <ul>
+            
+              <li><i class="fa fa-thin fa-envelope"></i>Mail us</li>
+              <li class="no-icon">admissions@indusschool.com</li>
+              <li><i class="fa fa-phone" aria-hidden="true"></i>Call us</li>
+              <li class="no-icon">+91-987 654 3210</li>
+              <li class="no-icon">+91-987 654 3210</li>
+              <li><i class=" fa fa-solid fa-location-dot"></i>Visit us</li>
+              <li class="no-icon">No. 576, Bhukum, Tal. mulshi, Dist Pune412115.</li>
+          </ul>
+           
+        </div>
+        
+        
+        
+        
           <div class="col-md-4">
             <!-- <h3>Location</h3> -->
             <div id="map" class="map">
@@ -469,12 +480,12 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid bg-dark text-white py-3">
+      <div class="container-fluid minifooter text-white py-3">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
               <p>
-                &copy; © 2023 INDUS INTERNATIONAL SCHOOL, PUNE. ALL RIGHTS
+                &copy; 2023 INDUS INTERNATIONAL SCHOOL, PUNE. ALL RIGHTS
                 RESERVED.
               </p>
             </div>
@@ -553,7 +564,7 @@
         $("#performance").owlCarousel({
           loop: true,
           dots: false,
-          margin: 20,
+          margin: 10,
           responsiveClass: true,
           responsive: {
             0: {
@@ -565,7 +576,7 @@
               nav: false,
             },
             1000: {
-              items:3.6,
+              items:4,
               nav: false,
               loop: false,
             },
